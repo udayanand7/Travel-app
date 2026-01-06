@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
+  --color-primary-950: #082f49;
+  
+  --color-accent-50: #fffef2;
+  --color-accent-100: #fff9e6;
+  --color-accent-200: #ffecd1;
+  --color-accent-300: #ffdaad;
+  --color-accent-400: #ffbd7a;
+  --color-accent-500: #f99d42;
+  --color-accent-600: #e67e22;
+  --color-accent-700: #c05c14;
+  --color-accent-800: #9a4413;
+  --color-accent-900: #7b3713;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold tracking-tight;
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-primary-600 text-white rounded-xl font-medium transition-all hover:bg-primary-700 hover:shadow-lg active:scale-95 disabled:opacity-50;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition-all hover:shadow-xl hover:border-primary-100;
+}
