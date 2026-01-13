@@ -18,7 +18,7 @@ This app helps users explore destinations, plan trips, and manage travel-related
 - 🔐 User authentication (Firebase Auth)
 - ☁️ Real-time data storage with Firebase
 - ⚡ Fast and responsive UI generated using Antigravity prompts
-- 📱 Mobile-friendly design
+- 💻 web-friendly design
 - 🔄 Real-time updates without page refresh
 
 
